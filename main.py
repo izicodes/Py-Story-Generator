@@ -1,5 +1,6 @@
 import time, os
 
+# The menu
 def menu():
 	print("Welcome To Xia's Story Generator")
 	time.sleep(0.75)
@@ -20,12 +21,39 @@ def menu():
 	else:
 		time.sleep(0.75)
 		print("\nYour storyline game will load now . . .")
+		time.sleep(1.3)
 		return answer
 
+# Storyline 1 
 def humansAlienStory():
 	print("Welcome To Xia's Story Generator")
 	time.sleep(0.75)
-	print("Hello")	
+	print("Storyline 1: Humans and Aliens? 👨 👽 \n")
+	time.sleep(0.75)
+
+	adjective = input("Give an adjective e.g. friendly, hostile, scared: ")
+	alienName = input("Give a made-up alien race: ")
+	language = input("Give a human language: ")
+	randomNum = input("Give a random number: ")
+	spaceCraft = input("Select a number for a spacecarft name:\n[1] flying crafts\n[2] mother ships\n[3] starships\nEnter here: ")
+	if spaceCraft == "1":
+		spaceCraft = "flying crafts"
+	elif spaceCraft == "2":
+		spaceCraft = "mother ships"
+	else:
+		spaceCraft = "starships"		
+
+	story1 = f"Humanity makes contact with an alien species - They are called {alienName}. They seem rather {adjective}, but also quite... baffled. After working out basic {language}, they ask us, 'We have not seen any {spaceCraft} leave this system for one of your many other colonies in {randomNum} local years. Why? Have you quarantined the system?'"
+
+	time.sleep(0.75)
+	print("\nYour story will load now . . .")
+	time.sleep(1.3)
+
+	print(story1)
+
+	
+
+
 
 answer = menu()
 
