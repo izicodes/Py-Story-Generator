@@ -1,2 +1,2 @@
-# Py-Story-Generator
-Story generator using Python
+# Py Story Generator 🐍📖
+Story/Mad Libs generator using Python.
