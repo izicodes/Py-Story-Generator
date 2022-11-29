@@ -1,6 +1,4 @@
-import time
-
-
+import time, os
 
 def menu():
 	print("Welcome To Xia's Story Generator")
@@ -13,21 +11,30 @@ def menu():
  """)
 	time.sleep(0.75)
 	answer = int(input("Select the number of the story you would like generated: "))
-	if answer > 3 or answer < 0:
-		print("That number is not on the list. Please try again.")
 	
-	time.sleep(0.75)
-	print("\Your storyline game will load now . . .")
-	return answer
+	if answer > 3 or answer < 0:
+		print("\nThat number is not on the list. Please try again.")
+		time.sleep(1.3)
+		os.system("clear")
+		menu()
+	else:
+		time.sleep(0.75)
+		print("\nYour storyline game will load now . . .")
+		return answer
 
+def humansAlienStory():
+	print("Welcome To Xia's Story Generator")
+	time.sleep(0.75)
+	print("Hello")	
 
 answer = menu()
 
-if answer == 1:
 
-def humansAlienStory():
-	print("Hello")
-	
+
+if answer == 1:
+	os.system("clear")
+	humansAlienStory()
+
 
 story1 = "Humanity makes contact with an alien species. They seem rather friendly, but also quite... baffled. After working out basic English, they ask us, 'We have not seen any starship leave this system for one of your many other colonies in 297,591 local years. Why? Have you quarantined the system?'"
 
