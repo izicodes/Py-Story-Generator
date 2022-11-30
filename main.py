@@ -1,5 +1,7 @@
 import time, os
 
+totalStories = 0
+
 # The menu
 def menu():
 	print("Welcome To Xia's Story Generator")
@@ -28,7 +30,7 @@ def menu():
 def humansAlienStory():
 	print("Welcome To Xia's Story Generator")
 	time.sleep(0.75)
-	print("Storyline 1: Humans and Aliens? 👨 👽 \n")
+	print("\n>> Storyline 1: Humans and Aliens? 👨 👽 \n")
 	time.sleep(0.75)
 
 	adjective = input("Give an adjective e.g. friendly, hostile, scared: ")
@@ -41,18 +43,32 @@ def humansAlienStory():
 	elif spaceCraft == "2":
 		spaceCraft = "mother ships"
 	else:
-		spaceCraft = "starships"		
+		spaceCraft = "starships"	
+	disease = input("Name a disease: ")
+	majorEvent = input("Name a major event that allows all countries to compete in: ")		
 
-	story1 = f"Humanity makes contact with an alien species - They are called {alienName}. They seem rather {adjective}, but also quite... baffled. After working out basic {language}, they ask us, 'We have not seen any {spaceCraft} leave this system for one of your many other colonies in {randomNum} local years. Why? Have you quarantined the system?'"
+	story1 = f"\n\nHumanity makes contact with an alien species - They are called {alienName}. They seem rather {adjective}, but also quite... baffled.\nAfter working out basic {language}, they ask us, 'We have not seen any {spaceCraft} leave this system for one of your many other colonies in {randomNum} local years. Why? Have you quarantined the system?'. We could only reply with, 'We had the {disease} spread across Earth, so you are correct, we were trying to keep you aliens safe!' The {alienName} saw through our lies. The truth was we put all our money into the {majorEvent}... we were too embarrassed to say it to the aliens..\n"
 
 	time.sleep(0.75)
 	print("\nYour story will load now . . .")
 	time.sleep(1.3)
 
 	print(story1)
+	time.sleep(0.75)
+	print("Well done! You completed a storyline! One star for you! ⭐\n")
+	time.sleep(0.75)
+	playAgain = input("Would you like to go to the main menu or end the game here? [continue/end]\n>>")
+	if playAgain == "continue":
+		os.system("clear")
+		menu()
+	else:
+		os.system("clear")
+		print("\nThank you for playing! 💗")	
+
 
 	
-
+def endOfGame():
+	
 
 
 answer = menu()
