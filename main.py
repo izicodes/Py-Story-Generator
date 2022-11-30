@@ -43,13 +43,21 @@ def humansAlienStory():
 	alienName = input("Give a made-up alien race: ")
 	language = input("Give a human language: ")
 	randomNum = input("Give a random number: ")
-	spaceCraft = input("Select a number for a spacecarft name:\n[1] flying crafts\n[2] mother ships\n[3] starships\nEnter here: ")
-	if spaceCraft == "1":
-		spaceCraft = "flying crafts"
-	elif spaceCraft == "2":
-		spaceCraft = "mother ships"
-	else:
-		spaceCraft = "starships"	
+	while True:
+		spaceCraft = input("Select a number for a spacecarft name:\n[1] flying crafts\n[2] mother ships\n[3] starships\nEnter here: ")
+		if spaceCraft == "1":
+			spaceCraft = "flying crafts"
+			break
+		elif spaceCraft == "2":
+			spaceCraft = "mother ships"
+			break
+		elif spaceCraft == "3":
+			spaceCraft = "starships"
+			break
+		else:
+			print("\n❌ That is not an option from the list. Please try again.\n")
+			continue
+
 	disease = input("Name a disease: ")
 	majorEvent = input("Name a major event that allows all countries to compete in: ")		
 
