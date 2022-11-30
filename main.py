@@ -130,7 +130,7 @@ def colourKillerStory():
 
 	finishedStory(story3)
 
-
+# The Choices of storylines
 answer = menu()
 if answer == 1:
 	os.system("clear")
