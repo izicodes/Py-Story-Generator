@@ -26,6 +26,20 @@ def menu():
 		time.sleep(1.3)
 		return answer
 
+def finishedStory(story):
+	time.sleep(0.75)
+	print("\nYour story will load now . . .")
+	time.sleep(1.3)
+	print(story)
+	time.sleep(0.75)
+	playAgain = input("Would you like to go to the main menu or end the game here? [continue/end]\n>> ")
+	time.sleep(0.5)
+	if playAgain == "continue":
+		os.system("clear")
+		menu()
+	else:
+		endPart()
+
 # The Ending Screen
 def endPart():
 	os.system("clear")
@@ -63,18 +77,16 @@ def humansAlienStory():
 
 	story1 = f"\n\nHumanity makes contact with an alien species - They are called {alienName}. They seem rather {adjective}, but also quite... baffled.\nAfter working out basic {language}, they ask us, 'We have not seen any {spaceCraft} leave this system for one of your many other colonies in {randomNum} local years. Why? Have you quarantined the system?'. We could only reply with, 'We had the {disease} spread across Earth, so you are correct, we were trying to keep you aliens safe!' The {alienName} saw through our lies. The truth was we put all our money into the {majorEvent}... we were too embarrassed to say it to the aliens..\n"
 
-	time.sleep(0.75)
-	print("\nYour story will load now . . .")
-	time.sleep(1.3)
-	print(story1)
-	time.sleep(0.75)
-	playAgain = input("Would you like to go to the main menu or end the game here? [continue/end]\n>> ")
-	if playAgain == "continue":
-		os.system("clear")
-		menu()
-	else:
-		endPart()	
+	finishedStory(story1)	
 
+# Storyline 2
+def motherGoddessStory():
+	print("Welcome To Xia's Story Generator")
+	time.sleep(0.75)
+	print("\n>> Storyline 1: Humans and Aliens? 👨 👽 \n")
+	time.sleep(0.75)
+
+	story2 = "When you learned your mother was a goddess, things finally seemed to fall into place. The other demigods laughed at you, the only child born to the goddess of the hearth, Hestia. But your power was so much more than they could dream of."
 
 
 
@@ -84,7 +96,6 @@ if answer == 1:
 	humansAlienStory()
 
 
-story1 = "Humanity makes contact with an alien species. They seem rather friendly, but also quite... baffled. After working out basic English, they ask us, 'We have not seen any starship leave this system for one of your many other colonies in 297,591 local years. Why? Have you quarantined the system?'"
 
 story2 = "When you learned your mother was a goddess, things finally seemed to fall into place. The other demigods laughed at you, the only child born to the goddess of the hearth, Hestia. But your power was so much more than they could dream of."
 
