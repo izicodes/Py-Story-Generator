@@ -123,6 +123,14 @@ def motherGoddessStory():
 def colourKillerStory():
 	displayTitle("Storyline 3: The Colour Killer 💛🔪")
 
+	colour = input("Name a colour: ")
+	num = input()
+
+	story3 = f"A serial killer known as “{colour}” always leaves behind exactly {num} clues per murder - {colour} paint left everywhere on the crime scene... as well as {food} left on a plate? Anyways, after months of being unable to catch her, the authorities turn to the only man smart enough to figure out {colour}’s Clues: the world-famous detective named {userName}. Only {userName} could bring justice to all the murders"
+
+	finishedStory(story3)
+
+
 answer = menu()
 if answer == 1:
 	os.system("clear")
@@ -131,6 +139,8 @@ elif answer == 2:
 	os.system("clear")
 	motherGoddessStory()
 elif answer == 3:
+	os.system("clear")
+	colourKillerStory()
 
 
 
