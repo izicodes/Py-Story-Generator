@@ -26,24 +26,11 @@ def menu():
 		time.sleep(1.3)
 		return answer
 
-
-
-def endOfGame(points):
-	playAgain = input("Would you like to go to the main menu or end the game here? [continue/end]\n>>")
-	if playAgain == "continue":
-		os.system("clear")
-		menu()
-	else:
-		os.system("clear")
-		print("Welcome To Xia's Story Generator")
-		if points == 3:
-			print(f"\nYou received {points} star! ⭐ You completed all the stories!")
-		else:
-			print(f"\nYou received {points} star! ⭐ You completed some of the stories! Try and get them all next time!")	
-		print("\nThank you for playing! 💗")
-
-
-
+# The Ending Screen
+def endPart():
+	os.system("clear")
+	print("Welcome To Xia's Story Generator")
+	print("\nThank you for playing! 💗")
 
 # Storyline 1 
 def humansAlienStory():
@@ -73,10 +60,12 @@ def humansAlienStory():
 	time.sleep(1.3)
 	print(story1)
 	time.sleep(0.75)
-	print("Well done! You completed a storyline! One star for you! ⭐\n")
-	points = points + 1
-	time.sleep(0.75)
-	endOfGame(points)
+	playAgain = input("Would you like to go to the main menu or end the game here? [continue/end]\n>> ")
+	if playAgain == "continue":
+		os.system("clear")
+		menu()
+	else:
+		endPart()	
 
 
 
