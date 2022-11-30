@@ -143,7 +143,3 @@ elif answer == 2:
 elif answer == 3:
 	os.system("clear")
 	colourKillerStory()
-
-
-
-story3 = "A serial killer known as “Blue” always leaves behind exactly three clues per murder. After months of being unable to catch her, the authorities turn to the only man smart enough to figure out Blue’s Clues: the world-famous detective named Steve."
