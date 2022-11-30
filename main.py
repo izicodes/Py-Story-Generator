@@ -47,12 +47,16 @@ def endPart():
 	print("Welcome To Xia's Story Generator")
 	print("\nThank you for playing! 💗")
 
-# Storyline 1 
-def humansAlienStory():
+# Displaying the title of the story
+def displayTitle(title):
 	print("Welcome To Xia's Story Generator")
 	time.sleep(0.75)
-	print("\n>> Storyline 1: Humans and Aliens? 👨 👽 \n")
+	print(f"\n>> {title} \n")
 	time.sleep(0.75)
+
+# Storyline 1 
+def humansAlienStory():
+	displayTitle("Storyline 1: Humans and Aliens? 👨 👽")
 
 	adjective = input("Give an adjective e.g. friendly, hostile, scared: ")
 	alienName = input("Give a made-up alien race: ")
@@ -82,10 +86,7 @@ def humansAlienStory():
 
 # Storyline 2
 def motherGoddessStory():
-	print("Welcome To Xia's Story Generator")
-	time.sleep(0.75)
-	print("\n>> Storyline 2: Your mother is a Goddess ✨ \n")
-	time.sleep(0.75)
+	displayTitle("Storyline 2: Your mother is a Goddess ✨")
 
 	# Variables for the story
 	item = input("Name a random item: ")
@@ -118,7 +119,9 @@ def motherGoddessStory():
 
 	finishedStory(story2)
 
-
+# Storyline 3
+def colourKillerStory():
+	displayTitle("Storyline 3: The Colour Killer 💛🔪")
 
 answer = menu()
 if answer == 1:
@@ -127,9 +130,8 @@ if answer == 1:
 elif answer == 2:
 	os.system("clear")
 	motherGoddessStory()
+elif answer == 3:
 
 
-
-story2 = "When you learned your mother was a goddess, things finally seemed to fall into place. The other demigods laughed at you, the only child born to the goddess of the hearth, Hestia. But your power was so much more than they could dream of."
 
 story3 = "A serial killer known as “Blue” always leaves behind exactly three clues per murder. After months of being unable to catch her, the authorities turn to the only man smart enough to figure out Blue’s Clues: the world-famous detective named Steve."
