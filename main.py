@@ -1,7 +1,5 @@
 import time, os
 
-points = 0
-
 # The menu
 def menu():
 	print("Welcome To Xia's Story Generator")
