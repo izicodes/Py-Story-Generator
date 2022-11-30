@@ -84,14 +84,14 @@ def humansAlienStory():
 def motherGoddessStory():
 	print("Welcome To Xia's Story Generator")
 	time.sleep(0.75)
-	print("\n>> Storyline 2: Your mother is a Goddess 🧚‍♀️ \n")
+	print("\n>> Storyline 2: Your mother is a Goddess ✨ \n")
 	time.sleep(0.75)
 
 	# Variables for the story
 	item = input("Name a random item: ")
 	mythCreature = input("Name a myth creature but in the plural form: ").lower()
 	motherName = input("Give a woman's name: ").capitalize()
-	time = input("Give a random number: ")
+	timeNum = input("Give a random number: ")
 	while True:
 		timeUnit = input("Select a time unit:\n[1] Weeks \n[2] Days \n[3] Hours \n[4] Minutes \n[5] Seconds \nEnter here: ")
 		if timeUnit == "1":
@@ -114,7 +114,7 @@ def motherGoddessStory():
 			continue
 	powerName = input("Give a power ability name: ")						
 
-	story2 = f"When you learned your mother was a goddess of {item}, things finally seemed to fall into place. The other demigods and {mythCreature} laughed at you, the only child born to the goddess of {item}, {motherName}. But your power was so much more than they could dream of. You had the power of {powerName} which you kept secret for {time} {timeUnit} from your mother and everyone. But how will you use your powers?"
+	story2 = f"\n\nWhen you learned your mother was a goddess of {item}, things finally seemed to fall into place. The other demigods and {mythCreature} laughed at you, the only child born to the goddess of {item}, {motherName}. But your power was so much more than they could dream of. You had the power of {powerName}, which you kept secret for {timeNum} {timeUnit} from your mother and everyone. But how will you use your powers?\n"
 
 	finishedStory(story2)
 
